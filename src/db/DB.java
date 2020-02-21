@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
+import javax.swing.JOptionPane;
 
 public class DB {
     
@@ -20,7 +21,7 @@ public class DB {
                 String url = prop.getProperty("dburl");
                 conn = DriverManager.getConnection(url,prop);
             }catch(SQLException e){
-               throw new db.dbException(e.getMessage());
+                JOptionPane.showMessageDialog(null, e.getMessage());
             }               
         }
         return conn;

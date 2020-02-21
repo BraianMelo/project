@@ -47,7 +47,6 @@ public class loginView extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(300, 500));
         setMinimumSize(new java.awt.Dimension(300, 500));
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -170,8 +169,9 @@ public class loginView extends javax.swing.JFrame {
         
         if(list2.size() == 1){
             peopleLogged = list2.get(0);
-            System.out.println(peopleLogged);
             JOptionPane.showMessageDialog(null, "found!");
+            new MenuView(peopleLogged.getId()).setVisible(true);
+            dispose();
         }else{
             JOptionPane.showMessageDialog(null, "not found!");
         }  

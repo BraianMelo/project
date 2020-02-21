@@ -55,7 +55,6 @@ public class createUserView extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(300, 500));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(300, 500));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -114,6 +113,7 @@ public class createUserView extends javax.swing.JFrame {
         jLabel7.setText("Gender");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
 
+        btnGroup.add(rbtMale);
         rbtMale.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         rbtMale.setText("Male");
         rbtMale.setBorder(null);
@@ -126,6 +126,7 @@ public class createUserView extends javax.swing.JFrame {
         });
         jPanel1.add(rbtMale, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 120, -1));
 
+        btnGroup.add(rbtFeminine);
         rbtFeminine.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         rbtFeminine.setText("Feminine");
         rbtFeminine.setBorder(null);

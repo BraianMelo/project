@@ -5,9 +5,15 @@
         <group>
             <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/model/Dao/impl/PeopleDaoJDBC.java</file>
             <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/gui/loginView.java</file>
+            <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/model/Dao/TaskDao.java</file>
             <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/gui/facilities/Methods.java</file>
-            <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/model/entities/People.java</file>
-            <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/gui/createUserView.java</file>
+            <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/db/DB.java</file>
+            <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/model/Dao/impl/TaskDaoJDBC.java</file>
+            <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/model/entities/Task.java</file>
+            <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/gui/panelTask.java</file>
+            <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/csv/Files.java</file>
+            <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/gui/MenuView.java</file>
+            <file>file:/C:/Users/Braian/Documents/NetBeansProjects/aplicativo/src/gui/createTaskView.java</file>
         </group>
     </open-files>
 </project-private>

@@ -1,7 +1,6 @@
 package model.Dao.impl;
 
 import db.DB;
-import gui.facilities.Methods;
 import java.util.List;
 import model.Dao.PeopleDao;
 import model.entities.People;
@@ -17,14 +16,13 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class PeopleDaoJDBC implements PeopleDao{
-    
+     
     private Connection conn;
     
     public PeopleDaoJDBC(Connection conn){
         this.conn = conn;
     }
     
-
     @Override
     public void insert(People people) {
         PreparedStatement st = null;
@@ -85,15 +83,11 @@ public class PeopleDaoJDBC implements PeopleDao{
            }
            return list;  
        }catch(SQLException e){
-           throw new db.dbException(e.getMessage());
+           JOptionPane.showMessageDialog(null, e.getMessage());
+           return null;
        }finally{  
-           try {
                DB.closeStatement(st);
                DB.closeResultSet(rs);
-               DB.closeConnection();
-           } catch (Exception ex) {
-               Logger.getLogger(PeopleDaoJDBC.class.getName()).log(Level.SEVERE, null, ex);
-           }
         }
     }
     
@@ -107,9 +101,7 @@ public class PeopleDaoJDBC implements PeopleDao{
             }
         }
         return String.valueOf(list);
-    }
-    
- 
-    
-    
+    }  
+
 }
+ 
